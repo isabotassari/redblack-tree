@@ -1,0 +1,35 @@
+/* styles.css */
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #373737;
+    color: #333;
+}
+
+h1 {
+    color: #000000;
+}
+
+.colored-section {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 5px; /* Adjust padding as needed */
+    height: 80px;
+}
+
+.column {
+    width: 30%; /* Set the width of each column */
+    float: left; /* Float columns next to each other */
+    margin: 1%; /* Add some margin between columns */
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    height: 120px;
+}
+
+/* Clear floats after columns to prevent layout issues */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Black Tree</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    
+    <div class="colored-section">
+        <h1>Visualização Árvore Red-Black</h1>
+    </div>
+
+     
+        
+        <br>
+
+        <div class="column">
+            <h2>Inserir</h2>
+            <input type="text" id="insertInput" name="name" value size="4" oninput="validateInput(this, 'insertNumericInputError')">
+    <button onclick="getInsertInput()">Inserir</button>
+    <span id="insertNumericInputError" style="color: white;"></span>
+        </div>
+
+        <div class="column">
+            <h2>Deletar</h2>
+            <input type="text" id="deleteInput" name="name" value size="4" oninput="validateInput(this, 'deleteNumericInputError')">
+    <button onclick="getDeleteInput()">Deletar</button>
+    <span id="deleteNumericInputError" style="color: white;"></span>
+        </div>
+    
+        <div class="column">
+            <h2>Buscar</h2>
+            <input type="text" id="searchInput" name="name" value size="4" oninput="validateInput(this, 'searchNumericInputError')">
+            <button onclick="getSearchInput()">Buscar</button>
+            <span id="searchNumericInputError" style="color: white;"></span>
+        </div>
+
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script src="rb_node.js"> </script>
+    
+    <footer>
+    
+        <p>&copy; 2023 </p>
+    </footer>
+
+    
+</body>
+
+</html>
